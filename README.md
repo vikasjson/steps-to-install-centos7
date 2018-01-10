@@ -47,3 +47,27 @@ Step 3: Now centos window will come and choose your drive where you want to inst
             nmtui
   
   step 8 : Enable ONBOOT = yes
+           
+           goto network-scripts folder using this command:
+           cd /etc/network-scripts
+           
+           and edit anyone file out of these
+           ifcfg-enp1s0/ifcfg-enp0s3 these files are different for every system find your one
+           
+  step 9: Install GNOME Graphical User Interface using below command:
+  
+          yum -y group install "GNOME Desktop" "Graphical Administrative Tools"
+          
+  step 10: Check default UI mode its Graphical or Command line using below command :
+  
+            systemctl get-default
+            
+  step 11: set default target "GNOME UI" on load of operating system using below command
+            
+            systemctl set-default graphical.target
+            
+            
+            
+        ************* installation complete hope it will help you for installing centos *************    
+            
+  
